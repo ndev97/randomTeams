@@ -28,6 +28,11 @@ generar.addEventListener("click", () =>{
     let numRandom;
     let temp;
 
+    if(document.getElementById("jugador1").value == ""){
+        alert("Faltan jugadores!!");
+        return;
+    }
+
     while(--i > 0){
         numRandom = Math.floor(Math.random() * (i+1));
         temp = playersArray[numRandom];
