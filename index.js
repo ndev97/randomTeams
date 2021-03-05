@@ -19,7 +19,6 @@ jugadores.addEventListener("click", ()=>{
     document.getElementById("jugador8").value = playersArray[7];
     document.getElementById("jugador9").value = playersArray[8];
     document.getElementById("jugador10").value = playersArray[9];
-
 });
 
 generar.addEventListener("click", () =>{
@@ -28,9 +27,9 @@ generar.addEventListener("click", () =>{
     let numRandom;
     let temp;
 
-    if(document.getElementById("jugador1" || "jugador2" || "jugador3" || "jugador4" || "jugador5" || "jugador6" || "jugador7" || "jugador8" || "jugador9" || "jugador10").value == ""){
-        alert("Faltan jugadores!!");
-        return;
+    if(document.getElementById("jugador1", "jugador2", "jugador3", "jugador4", "jugador5", "jugador6", "jugador7", "jugador8", "jugador9", "jugador10").value == ""){
+        document.getElementById("jugadores").innerText.reset();
+        return alert("Faltan jugadores!!");
     }
 
     while(--i > 0){
