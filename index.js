@@ -6,7 +6,11 @@ let playersArray = new Array(10);
 jugadores.addEventListener("click", ()=>{
 
     for(i = 0; i < 10; i++){
-        playersArray[i] = prompt("Ingrese jugador", `jugador ${i+1}`);
+        playersArray[i] = prompt("Ingrese jugador n° " + (i+1));
+        if(i == ""){
+            alert("Ingresa un nombre valido capo");
+            return
+        }
     }
 
     document.getElementById("jugador1").value = playersArray[0];
@@ -28,7 +32,7 @@ generar.addEventListener("click", () =>{
     let numRandom;
     let temp;
 
-    if(document.getElementById("jugador1").value == ""){
+    if(document.getElementById("jugador1" || "jugador2" || "jugador3" || "jugador4" || "jugador5" || "jugador6" || "jugador7" || "jugador8" || "jugador9" || "jugador10").value == ""){
         alert("Faltan jugadores!!");
         return;
     }
