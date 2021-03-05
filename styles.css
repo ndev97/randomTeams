@@ -33,7 +33,7 @@ button{
     border: none;
     box-shadow: 2 2 10px black;
     margin: 10px;
-    margin-left: 100px;
+    margin-left: 125px;
 }
 
 button:hover{
@@ -43,5 +43,16 @@ button:hover{
 }
 
 #enviar{
-    margin-left: 145px;
+    margin-left: 135px;
+}
+
+@media(max-width: 645px){
+    button{
+        width: 200px;
+        margin-left: 100px;
+    }
+    #enviar{
+        margin-left: 100px;
+    }
+    
 }

@@ -1,10 +1,6 @@
 let jugadores = document.querySelector("#ingresar");
 let generar = document.querySelector("#enviar");;
 
-let min = 1;
-let max = 3;
-let NumeroTeam;
-
 let playersArray = new Array(10);
 
 jugadores.addEventListener("click", ()=>{
