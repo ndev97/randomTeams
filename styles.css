@@ -1,0 +1,48 @@
+body{
+    background-color:#340858;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+}
+
+.main{
+    width: 50%;
+    align-content: center;
+}
+
+.jugadores{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+input{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 174, 0);
+    font-size: 17px;
+    height: 30px;
+    padding: 7px;
+    margin: 1px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+}
+
+button{
+    background-color: rgb(190, 52, 10);
+    color: white;
+    padding: 10px 20px ;
+    border-radius: 80px;
+    border: none;
+    box-shadow: 2 2 10px black;
+    margin: 10px;
+    margin-left: 100px;
+}
+
+button:hover{
+    background-color: rgb(255, 115, 73);
+    color: black;
+    transition: 0.6s;
+}
+
+#enviar{
+    margin-left: 145px;
+}
