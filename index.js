@@ -7,10 +7,6 @@ jugadores.addEventListener("click", ()=>{
 
     for(i = 0; i < 10; i++){
         playersArray[i] = prompt("Ingrese jugador n° " + (i+1));
-        if(i == ""){
-            alert("Ingresa un nombre valido capo");
-            return
-        }
     }
 
     document.getElementById("jugador1").value = playersArray[0];
