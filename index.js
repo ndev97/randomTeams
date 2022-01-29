@@ -8,7 +8,6 @@ jugadores.addEventListener("click", ()=>{
     for(i = 0; i < 10; i++){
         playersArray[i] = prompt("Ingrese jugador n° " + (i+1));
     }
-
     document.getElementById("jugador1").value = playersArray[0];
     document.getElementById("jugador2").value = playersArray[1];
     document.getElementById("jugador3").value = playersArray[2];
@@ -28,7 +27,6 @@ generar.addEventListener("click", () =>{
     let temp;
 
     if(document.getElementById("jugador1", "jugador2", "jugador3", "jugador4", "jugador5", "jugador6", "jugador7", "jugador8", "jugador9", "jugador10").value == ""){
-        document.getElementById("jugadores").innerText.reset();
         return alert("Faltan jugadores!!");
     }
 
